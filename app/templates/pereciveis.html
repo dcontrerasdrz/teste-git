@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitização</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+<body>
+<h1 style="text-align:center;">Sanitização de produtos perecíveis</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <a href="/dashboard">visualizar dashboard</a>
+            </div>
+            <table class="table">
+                <thead>
+                    <th>id</th>
+                    <th>Codigo_Do_Sad</th>
+                    <th>Descricao_Rms_Higienizada_carrefour</th>
+                    <th>Descricao_Completa_Higienizada</th>
+                    <th>Aprovacao</th>
+                    <th>Observacao</th>
+                </thead>
+                <tbody>
+                    {%for e in pereciveis %}
+                    
+                    <tr>
+                        <td>{{e.id}}</td>
+                        <td>{{e.Codigo_Do_Sad}}</td>
+                        <td>{{e.Descricao_Rms_Higienizada_carrefour}}</td>
+                        <td>{{e.Descricao_Completa_Higienizada}}</td>
+                        <td>{{e.Aprovacao}}</td>
+                        <td>{{e.Observacao}}</td>
+                        <td>
+                            <a href="/edit_pereciveis/{{e.id}}">Editar</a>
+                        </td>
+
+                    </tr>
+                    
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+</form>
+</body>
+</html>

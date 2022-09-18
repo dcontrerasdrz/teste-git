@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles_cadastro.css')}}">
+
+</head>
+<body>
+    
+<form action="/dashboard" class="container">
+    <div class="box">
+        <iframe src="https://app.powerbi.com/reportEmbed?reportId=92f08160-8019-4b65-ac04-bc94272931a9&autoAuth=true&ctid=abfc9287-1e5c-4db0-b248-285d4d1975a3" 
+            frameborder="0;"
+            width="1800"
+            height="1400"
+            margin-top="auto">
+        </iframe>
+    </div>
+</form>
+
+    
+</body>
+</html>

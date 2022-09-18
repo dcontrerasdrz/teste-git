@@ -1,0 +1,55 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial;
+    color: #323232;
+    border: none;
+}
+h1{
+    text-
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/*container login*/
+
+#login-container2{
+    background-color: #c0c0c0;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 22vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*formulario */
+
+#logo_1 img{
+    position: relative;
+    max-width: 300px;
+    margin-top: 30;
+    margin-left: 1500px;
+    
+}
+
+#logo_2 img{
+    position: relative;
+    max-width: 200px;
+    margin-top: -170px;
+    margin-right: auto;
+}
+form{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+
+    

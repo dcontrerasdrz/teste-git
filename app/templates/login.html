@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+<body>
+    
+      
+    <div id="login-container">
+        <div id="logo_1">
+            <img src="{{ url_for('static',filename='logo_1.png')}}" alt="">
+        </div>
+        <div id="logo_2">
+            <img src="{{ url_for('static',filename='logo_2.png')}}" alt="">
+        </div>
+        <h3>identifique-se no carrefour</h3>
+        
+        {% block content %}
+        <form action="" method="post">
+            {{ form.csrf_token }}
+            <label for="usuario">Usuario</label>
+            {{ form.username(class="form-control", placeholder='Digite seu usuario')}}
+            {% if form.errors.username %}
+            <div class="alert alert-danger" role="alert">
+                {{ form.errors.username }}
+            </div>    
+            {% endif %}
+            <label for="password">Senha</label>
+            {{ form.password(class="form-control", placeholder='Digite sua senha')}}
+            {% if form.errors.password %}
+            <div class="alert alert-danger" role="alert">
+                {{ form.errors.password }}
+            </div>
+            {% endif %}
+            <div class="checkbox">
+                <label>Lembra minha senha</label>
+                {{ form.remember_me()}} 
+            </div>
+            
+            <a href="#" id="forgot-pass">Esqueceu a senha</a>
+            <input type="submit" value="Login">
+        </form>
+        {% endblock %}
+        
+        <div id="social-container">
+            <p>Siga nossas redes sociais</p>
+            <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+            <div id="register-container">
+                <a href="/add" id="create">Novo usuario</a>
+                
+
+            </div>
+        
+    </div>
+</body>
+</html>

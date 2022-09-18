@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    
+    <link rel="stylesheet" href="{{url_for('static',filename='styles_index.css')}}">
+</head>
+
+<body>
+    <h1 style="text-align:center;
+    color: blue;">Bem-vindos ao carrefour</h1>
+
+    <div id="login-container">
+
+        <div id="logo_1" style="margin-left:auto;
+        margin-right:auto">
+            <img src="{{ url_for('static',filename='logo_1.png')}}" alt="">
+        </div>
+        
+            <a href="/login" id="create">Logar no Carrefour</a>
+        </div>
+    </div>
+</body>
+</html>

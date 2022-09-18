@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles_edit_pereciveis.css')}}">
+    
+
+</head>
+<body>
+<a id="link-topo" href="#">&#10008;</a>
+<h2 style="text-align:center;">Editar ID: {{ pereci.id }}</h2>
+<form action="/edit_pereciveis/{{ pereci.id }}" class="container" method="post">
+    <div clas="row">
+
+        <div class="col-md-6">
+            Aprovação:<input type="text" name="Aprovacao" id="Aprovacao" placeholder="Digite SIM - NAO" class="form-control" value="{{ pereci.Aprovacao }}"><br>
+        </div>
+        <div class="col-md-6">
+            Observação:<input type="text" name="Observacao" id="Observacao" placeholder="Informe " class="form-control" value="{{ pereci.Observacao }}"><br>
+        </div>    
+    </div>
+        
+    <div class="row col-xs-12">
+        <button type="submit" class="btn btn-block btn-success">Atualizar</button>
+    </div>
+    
+</form>
+</div>
+</body>
+</html>

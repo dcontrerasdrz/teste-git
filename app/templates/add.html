@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+
+</head>
+<body>
+<h2 style="text-align:center;">Cadastro novo usuario carrefour</h2>
+<div id="login-container"></div>
+    
+    <form action="/add" class="container" method="post">
+        <div clas="row">
+            <div class="col-md-6">
+                Usuario:<input type="text" name="usuario" id="usuario" placeholder="Digite um usuario" class="form-control"><br>
+            </div>
+            <div class="col-md-6">
+                Nome:<input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="form-control"><br>
+            </div>    
+            <div class="col-md-6">
+                E-mail:<input type="text" name="email" id="email" placeholder="Digite seu E-mail" class="form-control"><br>
+            </div>
+            <div class="col-md-6">
+                Senha:<input type="password" name="senha" id="senha" placeholder="Digite uma senha" class="form-control"><br>
+            </div>
+            <div class="col-md-6">
+                Condição:<input type="text" name="condicao" id="condicao" placeholder="Digite 'usuario | admin'" class="form-control"><br>
+            </div>
+            
+            <div id="submit" class="row col-xs-12">
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
