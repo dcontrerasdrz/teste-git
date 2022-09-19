@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 virtualenv = "*"
 gunicorn = "*"
+flask-script-extras = "*"
+flask-script = "*"
 
 [dev-packages]
 
