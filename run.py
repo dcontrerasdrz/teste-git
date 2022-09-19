@@ -1,5 +1,5 @@
 from app import manager
-from app import app
+
 import os
 
 
